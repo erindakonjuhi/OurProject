@@ -1,0 +1,76 @@
+.search .searchByName {
+  margin-top: 30px;
+}
+.search .searchTitle {
+  color: purple;
+  font-size: 2.2rem;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.search .searchByName input {
+  all: unset;
+  background-color: #b276c4 ;
+  color: purple;
+  font-size: 1.8rem;
+  font-weight: 500;
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.search .searchByCategory {
+  margin: 40px 0;
+}
+.search .searchByCategory button {
+  all: unset;
+  cursor: pointer;
+  background-color: #b276c4;
+  color: purple;
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5px 10px 5px 0;
+}
+.search .searchByCategory button.active {
+  background-color: #b276c4;
+  color: var(--color-body-bg);
+}
+.search .searchByPrice {
+  margin-top: 10px;
+}
+
+.search .searchByPrice input {
+  all: unset;
+  background-color: #b276c4 ;
+  color: var(--color-text-primary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin: 5px 10px 5px 0;
+}
+.search .searchByPrice button {
+  all: unset;
+  cursor: pointer;
+  background-color: #b276c4 ;
+  color: var(--color-body-bg);
+  font-size: 0.8rem;
+  font-weight: 500;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+@media (min-width: 586px) {
+  .search .searchTitle {
+    font-size: 1.5rem;
+  }
+}

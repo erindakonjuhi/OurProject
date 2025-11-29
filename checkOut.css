@@ -1,0 +1,121 @@
+.d-none {
+  display: none !important;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1320px;
+  margin: 0 auto;
+  gap: 20px;
+}
+.title {
+  width: calc(100% - 20px);
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.title h2 {
+  font-size: 2rem;
+  color: var(--color-text-primary);
+}
+.container .emptyCart h4 {
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  margin-bottom: 5px;
+}
+.container .emptyCart p {
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  margin-bottom: 10px;
+}
+.container .emptyCart a {
+  font-size: 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.container .checkoutBackground {
+  background-color: var(--color-card-bg);
+  padding: 20px 10px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.container .checkout .totalPrice {
+  font-size: 1rem;
+  padding-top: 30px;
+}
+.container .checkout button {
+  all: unset;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1rem;
+  width: fit-content;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  margin-top: 20px;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.container .cartItems {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.container .cartItems .card {
+  background-color: var(--color-card-bg);
+  padding: 10px;
+  border-radius: 16px;
+}
+.container .cartItems .card .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.container .cartItems .card .cardInfo {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.container .cartItems .card .cardInfo .productName {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.container .cartItems .card .cardInfo .productPrice {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+.container .cartItems .card .cardInfo button {
+  all: unset;
+  width: 20px;
+  cursor: pointer;
+  height: 20px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.container .cartItems .card .cardInfo span {
+  margin: 0 5px;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 3fr 1fr;
+  }
+  .container .cartItems {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .container .cartItems .card {
+    display: flex;
+  }
+  .container .cartItems .card .image img {
+    width: 100px;
+    height: auto;
+  }
+}

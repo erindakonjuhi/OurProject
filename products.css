@@ -1,0 +1,76 @@
+.products .productCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 50px 0;
+  gap: 20px;
+}
+.products .productCards .card {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: var(--color-card-bg);
+  padding: 0.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.1);
+}
+.products .productCards .card .cardImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.products .productCards .card .cardInfo h3 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  text-transform: capitalize;
+}
+.products .productCards .card .cardInfo p {
+  font-size: 1.5rem;
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 400;
+  margin: 0.5rem 0;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+.products .productCards .card .cardInfo button {
+  background-color: var(--color-primary);
+  display: block;
+  color: var(--color-white);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.products .productCards .card .cardInfo .quantity {
+  display: flex;
+  align-items: center;
+  
+  margin-top: 0.5rem;
+}
+.products .productCards .card .cardInfo .quantity button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.products .productCards .card .cardInfo .quantity span {
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+.d-none {
+  display: none !important;
+}
+
+@media (min-width: 586px) {
+  .products .productCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .products .productCards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,14 @@
+footer {
+  width: calc(100% - 20px);
+  max-width: 1320px;
+  margin: 1rem auto;
+  padding: 20px;
+  background-color: var(--color-card-bg);
+  border-radius: 16px;
+  text-align: center;
+}
+footer p {
+  font-size: 1rem;
+  color: var(--color-text-primary);
+  margin: 0;
+}

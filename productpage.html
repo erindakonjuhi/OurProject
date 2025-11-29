@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EM BookStore</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <header>
+      <h3 class="font-montserrat-semibold"> EM BookStore</h3>
+      <a href="checkOut.html">
+        <span class="icon"> 🛒 </span>
+      </a>
+    </header>
+    <main>
+      <section class="search">
+        <div class="searchByName">
+          <span class="searchTitle font-montserrat-medium">search</span>
+          <input type="text" placeholder="search name" id="searchByName" />
+        </div>
+        <div class="searchByCategory">
+          <span class="searchTitle font-montserrat-medium"
+            >search by category</span
+          >
+          <button data-category="all" class="active">All</button>
+          <button data-category="HardCover">HardCover</button>
+          <button data-category="PaperBack">PaperBack</button>
+        </div>
+        <div class="searchByPrice">
+          <span class="searchTitle font-montserrat-medium"
+            >search by price</span
+          >
+          <input type="number" placeholder="search price" id="searchByPrice" />
+          <button id="priceButton">Search</button>
+        </div>
+      </section>
+      <section class="products">
+        <div class="productCards">
+          <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="prideandprejudice.jpg" alt="Jane Austen" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">Pride and Prejudice</h3>
+              <p class="font-montserrat-regular">$32.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="babel.jpg" alt="by R.F. Kuang" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">Babel</h3>
+              <p class="font-montserrat-regular">$12.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="thelittleprince.jpg" alt="Antoine de Saint-Exupéry" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">The Little Prince</h3>
+              <p class="font-montserrat-regular">$7.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="IT.jpg" alt="Stephen King" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">IT</h3>
+              <p class="font-montserrat-regular">$ 16.00</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="wutheringhights.jpg" alt="Emily Bronte" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">WUthering Hights</h3>
+              <p class="font-montserrat-regular">$ 12.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="crimeandpunishment.jpg" alt="Fodor Dostoevsky" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">Crime and Punishment</h3>
+              <p class="font-montserrat-regular">$ 32.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="annakarenina.jpg" alt="Leo Tolstoy" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">Anna Karenina</h3>
+              <p class="font-montserrat-regular">$ 14.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="harrypotter.jpg" alt="J.K. Rowing" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">Harry Potter and The Sorcerer's Stone</h3>
+              <p class="font-montserrat-regular">$ 32.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+        <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="1984.jpg" alt="George Orwell" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">1984</h3>
+              <p class="font-montserrat-regular">$ 9.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+        <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="frankenstien.jpg" alt="Mary Shelley" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">Frankenstein</h3>
+              <p class="font-montserrat-regular">$ 18.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="theraven.jpg" alt="Edgar Allen Poe" />
+          </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">The Raven and Other Poems</h3>
+              <p class="font-montserrat-regular">$ 22.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+          </div>
+        </div>
+      </div>
+        <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="adventure.jpg" alt="Mark Twain" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">The Adventures of Huckleberry Finn</h3>
+              <p class="font-montserrat-regular">$ 11.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+        <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="greatexpectations.jpg" alt="Charles Dickens" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">Great Expectations</h3>
+              <p class="font-montserrat-regular">$ 25.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="meta.jpg" alt="Franz Kafka" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">The Metamorphosis</h3>
+              <p class="font-montserrat-regular">$ 8.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>  
+        <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="stranger.jpg" alt="Albert Camus" />
+        </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">The Stranger</h3>
+              <p class="font-montserrat-regular">$ 10.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="hamlet.jpg" alt="William Sheakspeare" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">Hamlet</h3>
+              <p class="font-montserrat-regular">$ 29.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+          </div>
+        </div>
+      </div>
+        <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="solitude.jpg" alt="Gabriel Garcia Marquez" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">One Hundred Years of Solitude</h3>
+              <p class="font-montserrat-regular">$ 34.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+        <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="thehungergames.jpg" alt="Suzanne Collins" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">The Hunger Games</h3>
+              <p class="font-montserrat-regular">$ 13.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>  
+          </div>
+        <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="shatterme.jpg" alt="Tahereh Mafi" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">Shatter Me</h3>
+              <p class="font-montserrat-regular">$ 27.99</p>
+              <button class="addToCart">Add</button>  
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+        <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="divergent.jpg" alt="veronica roth" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">Divergent</h3>
+              <p class="font-montserrat-regular">$ 14.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>  
+        <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="kiterunner.jpg" alt="Khalid Hosseini" />
+            </div>
+            <div class="cardInfo">  
+              <h3 class="font-montserrat-semibold">The Kite Runner</h3>
+              <p class="font-montserrat-regular">$ 24.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+        <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="catcher.jpg" alt="J.D. Salinger" />
+            </div>
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">The Catcher in the Rye</h3>
+              <p class="font-montserrat-regular">$ 15.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+        <div class="card" data-category="HardCover">
+            <div class="cardImage">
+              <img src="thrones.jpg" alt="George R.R. Martin" />
+            </div> 
+            <div class="cardInfo">
+              <h3 class="font-montserrat-semibold">A Game of Thrones</h3>
+              <p class="font-montserrat-regular">$ 29.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+        <div class="card" data-category="PaperBack">
+            <div class="cardImage">
+              <img src="animalfarm.jpg" alt="George Orwell" />
+            </div>
+            <div class="cardInfo"> 
+              <h3 class="font-montserrat-semibold">Animal Farm</h3>
+              <p class="font-montserrat-regular">$ 9.99</p>
+              <button class="addToCart">Add</button>
+              <div class="quantity d-none">
+                <button class="reduce">🗑️</button>
+                <span class="font-montserrat-regular">1</span>
+                <button class="add">+</button>
+              </div>
+            </section>
+    </main>
+    <script src="productpage.js"></script>
+  </body>
+</html>
