@@ -6,7 +6,7 @@
 }
 .products .productCards .card {
   max-width: 300px;
-  margin: 0 auto;
+  margin: 100px auto;
   background-color: var(--color-card-bg);
   padding: 0.5rem;
   border-radius: 16px;

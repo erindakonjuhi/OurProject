@@ -24,14 +24,22 @@
       <div class="container">
         <section class="cart">
           <div class="cartItems">
-            <!-- Cart items will be dynamically inserted here -->
+            <div class="itemsHeader font-montserrat-semibold">
+              <span>Item</span>
+              <span>Price</span>
+              <span>Quantity</span>
+              <span>Total</span>
+            </div>
+            <div class="itemsList">
+              <!-- Cart items will be dynamically added here -->
+          </div>
           </div>
           <div class="emptyCart d-none">
             <h4 class="font-montserrat-semibold">Your cart is empty</h4>
             <p class="font-montserrat-regular">
               Add some products to see them here.
             </p>
-            <a href="./">products →</a>
+            <a href="productpage.html">products →</a>
           </div>
         </section>
         <section class="checkout">
@@ -42,6 +50,7 @@
             </div>
             <button id="checkoutButton" class="font-montserrat-semibold">
               Checkout
+            
             </button>
           </div>
         </section>
