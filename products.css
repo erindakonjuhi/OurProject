@@ -1,7 +1,7 @@
 .products .productCards {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 50px 0;
+  margin: 30px 0;
   gap: 20px;
 }
 .products .productCards .card {
