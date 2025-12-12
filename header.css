@@ -6,12 +6,12 @@ header {
   max-width: 1320px;
   margin: 1rem auto;
   padding: 20px;
-  background-color: var(--color-card-bg);
+  background-color: #5e2a2b;
   border-radius: 16px;
 }
 header h3 {
   font-size: 1.5rem;
-  color: var(--color-text-primary);
+  color: var(--color-white);
   text-transform: capitalize;
 }
 header a {
@@ -19,7 +19,7 @@ header a {
   font-size: 1.2rem;
   color: var(--color-text-primary);
   padding: 5px;
-  background-color: var(--color-body-bg);
+  background-color: #5e2a2b;
   border-radius: 5px;
   position: relative;
 }
@@ -30,7 +30,7 @@ header a span.circle{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--color-primary);
+  background-color: #5e2a2b;
 }
 @media (min-width: 586px) {
   header h3 {

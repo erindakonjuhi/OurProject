@@ -2,7 +2,7 @@
   margin-top: 30px;
 }
 .search .searchTitle {
-  color: black;
+  color: var(--color-text-primary);
   font-size: 2.2rem;
   display: block;
   margin-top: 30px;
@@ -11,8 +11,8 @@
 }
 .search .searchByName input {
   all: unset;
-  background-color: #b276c4 ;
-  color: purple;
+  background-color: #5e2a2b ;
+  color: var(--color-body-bg);
   font-size: 1.8rem;
   font-weight: 500;
   width: 400px;
@@ -27,8 +27,8 @@
 .search .searchByCategory button {
   all: unset;
   cursor: pointer;
-  background-color: #b276c4;
-  color: purple;
+  background-color: #5e2a2b;
+  color: var(--color-body-bg);
   font-size: 0.8rem;
   font-weight: 500;
   width: 100px;
@@ -38,8 +38,8 @@
   margin: 5px 10px 5px 0;
 }
 .search .searchByCategory button.active {
-  background-color: #b276c4;
-  color: var(--color-body-bg);
+  background-color: #5e2a2b;
+  color: var(--color-black);
 }
 .search .searchByPrice {
   margin-top: 10px;
@@ -47,8 +47,8 @@
 
 .search .searchByPrice input {
   all: unset;
-  background-color: #b276c4 ;
-  color: var(--color-text-primary);
+  background-color: #5e2a2b ;
+  color: var(--color-white);
   font-size: 0.8rem;
   font-weight: 500;
   width: 200px;
@@ -60,7 +60,7 @@
 .search .searchByPrice button {
   all: unset;
   cursor: pointer;
-  background-color: #b276c4 ;
+  background-color: #5e2a2b ;
   color: var(--color-body-bg);
   font-size: 0.8rem;
   font-weight: 500;

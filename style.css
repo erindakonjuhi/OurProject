@@ -1,9 +1,9 @@
 :root {
-  --color-body-bg: #e6effb; /* Main background color for the body */
-  --color-card-bg: #beaedb; /* Background color for cards */
+  --color-body-bg: #f5f3ef; /* Main background color for the body */
+  --color-card-bg: #f5f3ef; /* Background color for cards */
   --color-text-primary: #3a2d34; /* Primary text color */
-  --color-primary: #3f2a52; /* Primary color for buttons and links */
-  --color-white: #e6eff7; /* Primary color for buttons and links */
+  --color-primary: #5e2a2b; /* Primary color for buttons and links */
+  --color-white: #f5f3ef; /* Primary color for buttons and links */
 }
 
 * {
